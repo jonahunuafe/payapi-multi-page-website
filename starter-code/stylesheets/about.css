@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {    
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #E4F1FF;
+    font-size: 1.2rem;
+}
+
+body, html {
+    overflow: hidden;
+}
+
+.circle-div {
+    position: relative;
+}
+
+.circle-div > img {
+    width: 120%;
+    position: absolute;
+    transform: translate(35%, -70%);
+    z-index: -1;
+}
+
+#logo {
+    width: 30%;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+
+#menu {
+    width: 7%;
+    position: relative;
+    float: right;
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+#close {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+}
+
+nav::before {
+    content: "";
+    width: 80%;
+    border-top: 1px solid white;
+    position: absolute;
+    transform: translate(-50%, -7000%);
+}
+
+#nav-div {
+    width: 80%;
+    height: 100vh;
+    background: black;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 12rem;
+    margin-right: 2.5rem;
+}
+
+nav ul li {
+    list-style: none;
+    padding-top: 1.8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D8D9DA;
+    font-weight: 500;
+}
+
+.first-demo-btn {
+    width: 70%;
+    background: #AE445A;
+    border-radius: 1.5rem;
+    border-style: none;
+    padding: 1rem;
+    margin: auto;
+    color: #fff;
+}
+
+
+@media(min-width: 768px) {
+    .circle-div {
+        display: none;
+    }
+
+    #nav-div {
+        display: none;
+    }
+}
+

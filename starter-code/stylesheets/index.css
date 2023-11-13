@@ -73,7 +73,7 @@ nav::before {
     left: 3.5rem;
     top: -1rem;
     text-align: center;
-    display: none;
+    display: block;
 }
 
 nav ul {
@@ -511,9 +511,6 @@ footer ul li a, .fa {
         padding-right: 25%;
     }
 }
-
-
-
 
 
 
