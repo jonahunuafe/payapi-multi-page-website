@@ -1,0 +1,793 @@
+*,
+*::before,
+*::after {    
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #E4F1FF;
+    font-size: 1.2rem;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.circle-div {
+    overflow: hidden;
+}
+
+.circle-div > img {
+    width: 120%;
+    position: relative;
+    transform: translate(-7.8%, -35%);
+    z-index: -1;
+}
+
+#logo {
+    width: 30%;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+
+#menu {
+    width: 7%;
+    position: relative;
+    float: right;
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+#close {
+    position: absolute;
+    top: 4rem;
+    right: 3rem;
+}
+
+.phone-div > img {
+    width: 80%;
+    margin-left: 15%;
+}
+
+#sub-header {
+    position: relative;
+    margin-top: -120%;
+    width: 90%;
+}
+
+nav::before {
+    content: "";
+    width: 80%;
+    border-top: 1px solid white;
+    position: absolute;
+    transform: translate(-53%, -7000%);
+}
+
+#nav-div {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    position: absolute;
+    left: 3.5rem;
+    top: -1rem;
+    text-align: center;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 12rem;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+    padding-top: 1.8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D8D9DA;
+    font-weight: 500;
+}
+
+.first-demo-btn {
+    width: 80%;
+    background: #AE445A;
+    border-radius: 1.5rem;
+    border-style: none;
+    padding: 1rem;
+    margin-right: 5%;
+    color: #fff;
+}
+
+.start-txt {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    color: #445069;
+    margin-top: -15%;
+    font: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+input[type=text], .second-demo-btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.second-demo-btn {
+    background-color: #AE445A;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+input[type=text]:focus {
+    font-weight: bold;
+    color: #445069;
+}
+
+#question {
+    margin-top: 1.6rem;
+    font-size: 1.3rem;
+}
+
+.dark-blue-div {
+    background: #252B48;
+    margin-top: 20%;
+}
+
+.dark-blue-circle {
+    display: none;
+}
+
+.icons-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    gap: 20%;
+    position: relative;
+    top: 5rem;
+    left: 1.1rem;
+}
+
+.icon {
+    width: 70%;
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+#google {
+    width: 80%;
+}
+
+.we-work-div {
+    color: #fff;
+    width: 85%;
+    margin: 30% auto 5% auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.we-work-div > p {
+    color: #D0D4CA;
+}
+
+.we-work-div button {
+    background: transparent;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    outline: none;
+    border: 1px solid #fff;
+    font-size: 0.8rem;
+    width: 40%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.we-work-div button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.html-icon-div > img {
+    width: 110%;
+}
+
+.implement-div {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: -4.2rem;
+    text-align: center;
+    color: #252B48
+}
+
+.implement-div > p {
+    margin-top: -5%;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+.ui-ux-circle {
+    display: none;
+}
+
+.ui-ux-icon-div {
+    margin-top: -2.5%;
+}
+
+.ui-ux-icon-div > img {
+    width: 108%;
+}
+
+.ui-ux-div {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    color: #252B48;
+    position: relative;
+    top: -3.5rem;
+}
+
+h4 {
+    font-size: 2.3rem;
+}
+ 
+.ui-ux-div > p {
+    margin-top: -8%;
+}
+
+.fifth-section {
+    margin-top: -7%;
+}
+
+.info-col {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    color: #252B48;
+    padding-top: 10%;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+.info-col p {
+    margin-top: -6%;
+}
+
+.sixth-section {
+    text-align: center;
+    color: #252B48;
+}
+
+.reform-input-demo {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    top: -2.5rem;
+}
+
+h6 {
+    font-size: 2.1rem;
+}
+
+.seventh-section {
+    overflow: hidden;
+}
+
+footer {
+    background: #252B48;
+    text-align: center;
+    padding: 15%;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 3;
+    margin-right: 12%;
+}
+
+footer ul li a, .fa {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+#footer-logo {
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+.footer-circle {
+    position: relative;
+}
+
+.footer-circle img {
+    position: absolute;
+    width: 150%;
+    z-index: 1;
+    transform: translate(-15.5%, -31%);
+}
+
+
+
+
+
+/* For Tablets */
+
+@media(min-width: 768px) {
+    #nav-div {
+        left: 5rem;
+    }
+
+    nav::before {
+        width: 90%; 
+
+    }
+
+    #question {
+        margin-top: -2%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .input-demo-div {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        position: relative;
+        bottom: 0.5rem;
+    }
+
+    input[type=text] {
+        width: 60%;
+        position: relative;
+        left: 2rem;
+    }
+
+    .second-demo-btn {
+        width: 40%;
+    }
+
+    .second-demo-btn {
+        margin-top: -0.1%;
+        position: relative;
+        right: 2rem;
+    }
+
+    #question {
+        margin-top: 2.2%;
+    }
+
+    .dark-blue-div {
+        overflow: hidden;
+    }
+
+    .dark-blue-circle {
+        display: block;
+        position: relative;
+    }
+
+    .dark-blue-circle img {
+        position: absolute;
+        top: -35rem;
+        z-index: 1; 
+    }
+
+    .icons-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        left: 0.1rem;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .we-work-div {
+        width: 65%;
+        margin-top: 15%;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    .html-icon-div {
+        width: 70%;
+        margin: auto;
+    }
+
+    .implement-div {
+        top: -6.65rem;
+    }
+
+    .fourth-section {
+        margin-top: -7%;
+    }
+
+    .ui-ux-circle {
+        display: none;
+    }
+
+    .ui-ux-icon-div {
+        width: 65%;
+        margin: auto;
+    }
+
+    .ui-ux-div {
+        top: -6rem;
+    }
+
+    h3, h4 {
+        font-size: 3.4rem;
+    }
+
+    .fifth-section {
+        margin-top: -8.5%;
+    }
+
+    .info {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        gap: 3%;
+    }
+
+    .sixth-section {
+        margin-top: -5%;
+    }
+
+    .reform-input-demo {
+        top: -5.5rem;
+    }
+
+    h6 {
+        font-size: 3.7rem;
+    }
+
+    footer {
+        padding: 0;
+        height: 100px;
+    }
+
+    .footer-circle img {
+       width: 50%;
+       transform: translate(120%, -30%);
+    }
+    
+
+    footer, .logo-ul, footer ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-ul {
+        margin-left: 5%;
+    }
+
+    #footer-logo {
+        margin-top: 22%;
+    }
+
+    .footer-icons {
+        margin-right: 4rem;
+        margin-top: 2.6rem; 
+    }
+
+    .fa {
+        padding-right: 25%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* For Desktop */
+
+@media(min-width: 800px) {
+    #logo {
+        width: 10%;
+        margin-left: 10%;
+    }
+
+    #sub-header {
+      margin-top: 0;
+    }
+
+    #menu, #close {
+        display: none;
+    }
+
+    .circle-div {
+        position: absolute;
+        margin-left: 57%;
+        overflow: hidden;
+    }
+
+    .circle-div img {
+        width: 115%;
+        transform: translate(10%, -25%);
+    } 
+    
+    #nav-div {
+        background: none;
+        height: 0;
+        display: block;
+    }
+
+    nav::before {
+        display: none;
+    }
+
+    nav ul {
+        margin-top: 0;
+        margin-left: 22%;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30%;
+    }
+
+    nav ul li a {
+        color: #252B48;
+    }
+
+    nav ul li a:hover {
+        font-weight: 700;
+    }
+
+    .first-demo-btn {
+        width: 10%;
+        margin-right: 0;
+        position: relative;
+        float: right;
+        bottom: 60px;
+        margin-right: 75px;
+    }
+
+    .first-section {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .phone-div {
+        margin-right: 10%;
+    }
+
+    .phone-div img {
+        width: 120%;
+        margin-left: 0;
+    }
+
+    .start-txt {
+        width: 50%;
+        margin-top: 13%;
+        text-align: left;
+        margin-left: 10rem;
+    }
+
+    .input-demo-div {
+        margin-right: 20%;
+    }
+
+    input[type=text] {
+        left: 0;
+        font-size: 1rem;
+    }
+
+    .second-demo-btn {
+        width: 30%;
+        right: 3rem;
+        font-size: 1rem;
+    }
+
+    #question {
+        margin-top: 1rem;
+        margin-left: 1rem;
+
+    }
+
+    .dark-blue-div {
+        margin-top: 0;
+    }
+
+    .dark-blue-sub-div {
+        width: 82%;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .we-work-div {
+        max-width: 40%;
+        margin: 4% auto 5% 0%;
+        text-align: left;
+    }
+
+    .we-work-div > p {
+        margin-top: -4%;
+    }
+
+    .icons-div {
+        max-width: 30%;
+        margin: auto;
+        top: 0;
+        left: 0;
+        gap: 10%;
+        height: 100px;
+    }
+
+    .icon {
+        width: 85%;
+    }
+
+    .we-work-div button {
+        width: 25%;
+        margin-top: 2%;
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+
+    .we-work-div button:hover {
+        background: #fff;
+        color: #252B48;
+    }
+
+    .dark-blue-circle img {
+        top: -26rem;
+        left: -12rem;
+    }
+
+    .third-section {
+        display: flex;
+        margin-top: 5%;
+    }
+
+    .html-icon-div {
+        width: 40%;
+    }
+
+    .implement-div {
+        width: 40%;
+        top: -3rem;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .implement-div > p {
+        width: 70%;
+    }
+
+    .fourth-section {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -2rem;
+    }
+
+    .ui-ux-circle {
+        display: block;
+        position: relative;
+    }
+
+    .ui-ux-circle > img {
+        position: absolute;
+        height: 97%;
+        z-index: -1;
+        transform: translate(-50%, -2.5%);
+    }
+
+    .ui-ux-icon-div {
+        max-width: 45%;
+        margin-left: 12%;
+    }
+
+    .ui-ux-div {
+        text-align: left;
+        max-width: 30%;
+        margin-left: 9%;
+        top: -2.5rem;
+    }
+
+    h4 {
+        font-size: 2.7rem;
+    }
+
+    .info {
+        width: 85%;
+    }
+
+    .sixth-section {
+        margin: auto;
+        display: flex;
+    }
+
+    .reform-input-demo {
+        top: 0;
+        transform: translateX(45%);
+        max-width: 50%;
+    }
+
+    .ready {
+        margin-left: -4.5%;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    h6 {
+        font-size: 2.7rem;
+    }
+
+    .col {
+        flex-basis: 44%;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .logo-ul {
+        margin-left: 8.25%;
+        margin-top: 1.5rem;
+        width: 22%;
+    }
+
+    footer ul li {
+        padding-left: 3rem;
+    }
+
+    #footer-logo {
+        margin-top: 22%;
+    }
+
+    .footer-icons {
+        margin-right: 9rem;
+        margin-top: 4rem;
+        width: 7%;
+    }
+
+    .fa:hover {
+        color: red;
+    }
+}
