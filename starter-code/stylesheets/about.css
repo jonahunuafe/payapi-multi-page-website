@@ -114,6 +114,26 @@ h1 {
     padding-top: 0.8rem;
 }
 
+.team-members-circle {
+    display: none;
+}
+
+#mobile-team-members {
+    margin-top: 20%;
+}
+
+#mobile-team-members > img {
+    width: 100%;
+}
+
+#tablet-team-members {
+    display: none;
+}
+
+#desktop-team-members {
+    display: none;
+}
+
 
 
 
@@ -121,6 +141,10 @@ h1 {
 /* For Tablet */
 
 @media(min-width: 768px) {
+    /* header {
+        position: fixed;
+    } */
+
     #logo {
         width: 20%;
         margin-left: 2.5rem;
@@ -182,13 +206,26 @@ h1 {
 
     .container {
         width: 85%;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         display: flex;
         text-align: left;
     }
 
     .col {
         flex-basis: 50%;
+    }
+
+    #mobile-team-members {
+        display: none;
+    }
+
+    #tablet-team-members {
+        display: block;
+        margin-top: 10%;
+    }
+
+    #desktop-team-members {
+        display: none;
     }
     
 }
@@ -238,6 +275,30 @@ h1 {
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    .team-members-circle {
+        display: block;
+        position: absolute;
+        transform: translate(-50%, -11.5%)
+    }
+
+    .team-members-circle img {
+        width: 110%;
+        z-index: -1;
+    }
+
+    #tablet-team-members {
+        display: none;
+    }
+
+    #desktop-team-members {
+        display: block;
+        margin-top: 5%;
+    }
+
+    #desktop-team-members img {
+        width: 100%;
     }
     
 }
