@@ -95,13 +95,94 @@ nav ul li a {
 }
 
 
+
+
+
+/* For Tablet */
+
 @media(min-width: 768px) {
-    .circle-div {
-        display: none;
+    #logo {
+        width: 20%;
+        margin-left: 2.5rem;
+    }
+
+    .circle-div > img {
+        width: 120%;
+        transform: translate(52%, -70%);
+    }
+
+    .first-demo-btn {
+        margin-right: 2.5rem;
     }
 
     #nav-div {
+        display: block;
+        background: transparent;
+        height: 0;
+    }
+
+    nav::before {
         display: none;
+    }
+
+    #menu, #close {
+        display: none;
+    }
+
+    nav ul {
+        margin-top: 3.2%;
+        flex-direction: row;
+        margin-left: 2.5rem;
+    }
+
+    nav ul li a {
+        color: black;
+        margin-right: 2.5rem;
+    }
+
+    nav ul li a:hover {
+        font-weight: bold;
+    }
+
+    .first-demo-btn {
+        width: 25%;
+        position: relative;
+        float: right;
+        margin-top: -10%;
+    }
+}
+
+
+
+
+
+
+/* For Desktop */
+
+@media(min-width: 800px) {
+    #logo {
+        width: 10%;
+        margin-left: 10%;
+    }
+
+    .circle-div > img {
+        width: 50%;
+        transform: translate(120%, -75%);
+    }
+
+    .first-demo-btn {
+        width: 15%;
+        margin-top: -5%;
+        margin-right: 12%;
+    }
+
+    nav ul {
+        margin-top: 1.75%;
+    }
+
+    nav ul li a {
+        margin-right: 5rem;
+
     }
 }
 
