@@ -312,7 +312,7 @@ footer ul li {
     margin-right: 12%;
 }
 
-footer ul li a, .fa {
+footer ul li a {
     text-decoration: none;
     color: #fff;
 }
@@ -347,6 +347,7 @@ footer ul li a, .fa {
 @media(min-width: 768px) {
     #nav-div {
         left: 5rem;
+        display: none;
     }
 
     nav::before {
@@ -503,10 +504,11 @@ footer ul li a, .fa {
 
     .footer-icons {
         margin-right: 4rem;
-        margin-top: 2.6rem; 
+        margin-top: 2.6rem;
+        gap: 30%; 
     }
 
-    .fa {
+    .social-icons {
         padding-right: 25%;
     }
 }
@@ -520,7 +522,7 @@ footer ul li a, .fa {
 
 @media(min-width: 800px) {
     #logo {
-        width: 10%;
+        width: 12%;
         margin-left: 10%;
     }
 
@@ -554,7 +556,7 @@ footer ul li a, .fa {
     }
 
     nav ul {
-        margin-top: 0;
+        margin-top: 2.8%;
         margin-left: 22%;
         flex-direction: row;
         justify-content: space-between;
@@ -563,6 +565,7 @@ footer ul li a, .fa {
 
     nav ul li a {
         color: #252B48;
+        font-size: 1.5rem;
     }
 
     nav ul li a:hover {
@@ -570,7 +573,7 @@ footer ul li a, .fa {
     }
 
     .first-demo-btn {
-        width: 10%;
+        width: 12%;
         margin-right: 0;
         position: relative;
         float: right;
@@ -609,9 +612,9 @@ footer ul li a, .fa {
     }
 
     .second-demo-btn {
-        width: 30%;
+        width: 35%;
         right: 3rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     #question {
@@ -783,7 +786,7 @@ footer ul li a, .fa {
         width: 7%;
     }
 
-    .fa:hover {
+    .social-icons:hover {
         color: red;
     }
 }
