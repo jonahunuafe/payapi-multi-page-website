@@ -2,6 +2,12 @@ h1 {
     margin-top: 5%;
 }
 
+.error-msg {
+    color: red;
+    margin-top: -5%;
+    margin-bottom: 8%;
+}
+
 .form-section {
     margin-top: 25%;
 }
@@ -123,6 +129,11 @@ h2 {
     form > input {
         width: 90%;
         margin-bottom: 5%;
+    }
+
+    .error-msg {
+        margin-top: 0;
+        margin-bottom: 4%;
     }
 
     #message {

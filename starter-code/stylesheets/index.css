@@ -73,6 +73,10 @@ nav::before {
     left: 3.5rem;
     top: -1rem;
     text-align: center;
+    display: none;
+}
+
+.show {
     display: block;
 }
 
@@ -127,7 +131,7 @@ input[type=text], .second-demo-btn {
     outline: none;
     border: none;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .second-demo-btn {
@@ -352,7 +356,6 @@ footer ul li a {
 
     nav::before {
         width: 90%; 
-
     }
 
     #question {
@@ -507,10 +510,6 @@ footer ul li a {
         margin-top: 2.6rem;
         gap: 30%; 
     }
-
-    .social-icons {
-        padding-right: 25%;
-    }
 }
 
 
@@ -547,7 +546,6 @@ footer ul li a {
     
     #nav-div {
         background: none;
-        height: 0;
         display: block;
     }
 

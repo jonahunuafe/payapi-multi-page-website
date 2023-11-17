@@ -36,11 +36,12 @@
     <h1>Submit a help request and we’ll get in touch shortly.</h1>
     <section class="form-section">
       <div class="form-container">
-        <form action="">
+        <form class="form">
           <label for="name">Name</label>
           <input type="text" id="name" name="name"/>
           <label for="email">Email Address</label>
           <input type="email" id="email" name="email" required/>
+          <div class="error-msg">This field can't be empty</div>
           <label for="company-name">Company Name</label>
           <input type="text" id="company-name" name="company-name"/>
           <label for="title">Title</label>
@@ -53,7 +54,7 @@
             </p>
             <p>Stay up-to-date with company announcements and updates to our API</p>
           </div>
-          <button>Submit</button>
+          <button class="submit">Submit</button>
         </form>
       </div>
 
@@ -83,12 +84,12 @@
   <section class="footer-section">
     <footer>
       <div class="logo-ul">
-        <a href="">
+        <a href="./index.html">
           <img src="./starter-code/assets/shared/desktop/logo.svg" alt="" id="footer-logo">
         </a>
         <ul>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./about.html">About</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </div>
@@ -108,5 +109,7 @@
       <img src="./starter-code/assets/shared/desktop/bg-pattern-circle.svg" alt="">
     </div>
   </section>
+  <script src="./starter-code/javascripts/index.js"></script>
+  <script src="./starter-code/javascripts/contact.js"></script>
   </body>
 </html>

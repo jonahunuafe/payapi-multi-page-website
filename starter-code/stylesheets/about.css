@@ -9,7 +9,7 @@ body {
     padding: 0;
     background: #E4F1FF;
     font-size: 1.2rem;
-    color: gray;
+    color: #445069;
 }
 
 body, html {
@@ -30,7 +30,7 @@ body, html {
 #logo {
     width: 30%;
     margin-top: 2.5rem;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 #menu {
@@ -38,7 +38,7 @@ body, html {
     position: relative;
     float: right;
     margin-top: 3rem;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 #close {
@@ -64,6 +64,7 @@ nav::before {
     top: 0;
     right: 0;
     display: none;
+    z-index: 1;
 }
 
 nav ul {
@@ -174,7 +175,7 @@ input, .second-demo-btn {
     border: none;
     font-size: 1rem;
     margin: auto;
-    padding: 0.5rem;
+    padding: 1rem;
     width: 85%;
 }
 
@@ -399,13 +400,12 @@ footer ul li a, .fa {
     }
 
     .footer-icons {
-        margin-right: 4rem;
-        margin-top: 2.6rem; 
+        margin-right: 2.5rem;
+        margin-top: 2.4rem; 
+        display: flex;
+        justify-content: space-between;
+        width: 15%;
     }
-
-    .fa {
-        padding-right: 25%;
-    } 
 }
 
 
@@ -432,12 +432,12 @@ footer ul li a, .fa {
     }
 
     nav ul {
-        margin-top: 1.75%;
+        margin-top: 2%;
+        margin-left: 5.8rem;
     }
 
     nav ul li a {
-        margin-right: 5rem;
-
+        margin-right: 8rem;
     }
 
     h1 {
@@ -493,15 +493,12 @@ footer ul li a, .fa {
         margin: auto;
         position: relative;
         left: 0;
-        /* outline: 1px solid red; */
-
     }
 
     .input-demo-div {
         position: relative;
         top: 0;
         left: 15rem;
-        /* outline: 1px solid red; */
     }
 
     input {
@@ -542,13 +539,7 @@ footer ul li a, .fa {
     .footer-icons {
         margin-right: 9rem;
         margin-top: 4rem;
-        width: 7%;
+        width: 8%;
     }
-
-    .fa:hover {
-        color: red;
-    }
-
-    
 }
 

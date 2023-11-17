@@ -8,10 +8,6 @@
     margin: auto;
 }
 
-h1, .plan > span, button {
-    color: #192655;
-}
-
 h2 {
     color: #AE445A;
 }
@@ -67,7 +63,8 @@ h2 {
 }
 
 .plan-col-1 {
-    padding-left: 38.8%;
+    padding-left: 39%;
+    color: #7D7C7C;
 }
 
 
