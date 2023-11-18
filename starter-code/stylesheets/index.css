@@ -76,6 +76,14 @@ nav::before {
     display: none;
 }
 
+.hide-nav {
+    transform: translateX(100%);
+}
+
+.show-nav {
+    transform: translateX(100%);
+}
+
 .show {
     display: block;
 }
@@ -344,14 +352,14 @@ footer ul li a {
 
 
 
-
-
 /* For Tablets */
 
 @media(min-width: 768px) {
+    
     #nav-div {
         left: 5rem;
         display: none;
+        transform: translateX(0);
     }
 
     nav::before {

@@ -34,7 +34,7 @@ form > input {
     margin-top: 10%;
 }
 
-#checkbox {
+input[type="checkbox"] {
     width: 100%;
 }
 
