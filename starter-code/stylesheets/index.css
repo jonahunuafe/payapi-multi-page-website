@@ -80,14 +80,6 @@ nav::before {
     transform: translateX(100%);
 }
 
-.show-nav {
-    transform: translateX(100%);
-}
-
-.show {
-    display: block;
-}
-
 nav ul {
     display: flex;
     flex-direction: column;
@@ -201,23 +193,27 @@ h2 {
 
 .we-work-div > p {
     color: #D0D4CA;
+    line-height: 1.5;
 }
 
-.we-work-div button {
-    background: transparent;
+.about-btn-div {
+    margin-top: 15.5%;
+    padding-bottom: 25%;
+    text-align: center;
+}
+
+.about-btn-div a {
     padding: 1rem;
     border-radius: 2.5rem;
-    outline: none;
     border: 1px solid #fff;
-    font-size: 0.8rem;
-    width: 40%;
-    margin-top: 10%;
-    margin-bottom: 20%;
-}
-
-.we-work-div button a {
+    font-size: 1rem;
+    width: 50%;
+    display: block;
+    cursor: pointer;
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
+    margin: auto;
 }
 
 .html-icon-div > img {
@@ -353,7 +349,6 @@ footer ul li a {
 
 
 /* For Tablets */
-
 @media(min-width: 768px) {
     
     #nav-div {
@@ -404,6 +399,7 @@ footer ul li a {
 
     .dark-blue-div {
         overflow: hidden;
+        margin-bottom: 10%;
     }
 
     .dark-blue-circle {
@@ -414,7 +410,6 @@ footer ul li a {
     .dark-blue-circle img {
         position: absolute;
         top: -35rem;
-        z-index: 1; 
     }
 
     .icons-div {
@@ -430,6 +425,16 @@ footer ul li a {
     .we-work-div {
         width: 65%;
         margin-top: 15%;
+    }
+
+    .about-btn-div {
+        margin-top: 10%;
+        padding-bottom: 12%;
+    }
+
+    .about-btn-div a {
+        padding: 1.5rem;
+        font-size: 1.5rem;
     }
 
     h2 {
@@ -524,9 +529,7 @@ footer ul li a {
 
 
 
-
 /* For Desktop */
-
 @media(min-width: 800px) {
     #logo {
         width: 12%;
@@ -631,6 +634,7 @@ footer ul li a {
 
     .dark-blue-div {
         margin-top: 0;
+        height: 480px;
     }
 
     .dark-blue-sub-div {
@@ -653,7 +657,7 @@ footer ul li a {
     .icons-div {
         max-width: 30%;
         margin: auto;
-        top: 0;
+        top: 1rem;
         left: 0;
         gap: 10%;
         height: 100px;
@@ -663,21 +667,24 @@ footer ul li a {
         width: 85%;
     }
 
-    .we-work-div button {
-        width: 25%;
-        margin-top: 2%;
-        margin-bottom: 0;
-        font-weight: 700;
+    .about-btn-div {
+        margin-top: 5%;
     }
 
-    .we-work-div button:hover {
+    .about-btn-div a {
+        width: 13%;
+        padding: 1rem;
+        position: absolute;
+    }
+
+    .about-btn-div a:hover {
         background: #fff;
         color: #252B48;
     }
 
     .dark-blue-circle img {
-        top: -26rem;
-        left: -12rem;
+        top: -22rem;
+        left: -11rem;
     }
 
     .third-section {
