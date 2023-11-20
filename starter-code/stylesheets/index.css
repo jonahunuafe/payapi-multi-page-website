@@ -322,6 +322,10 @@ footer ul li {
     margin-right: 12%;
 }
 
+footer ul li:hover {
+    font-weight: 700;
+}
+
 footer ul li a {
     text-decoration: none;
     color: #fff;
@@ -335,6 +339,7 @@ footer ul li a {
 
 #footer-logo {
     filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    cursor: auto;
 }
 
 .footer-circle {
@@ -779,6 +784,7 @@ footer ul li a {
 
     footer {
         height: 150px;
+        position: relative;
     }
 
     .logo-ul {
@@ -798,10 +804,13 @@ footer ul li a {
     .footer-icons {
         margin-right: 9rem;
         margin-top: 4rem;
-        width: 7%;
+        width: 8%;
+        justify-content: space-between;
     }
 
-    .social-icons:hover {
-        color: red;
+    .social-icons {
+        cursor: pointer;
+        position: absolute;
+        z-index: 50;
     }
 }

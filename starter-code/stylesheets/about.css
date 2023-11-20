@@ -94,6 +94,7 @@ nav ul li a {
     padding: 1rem;
     margin: auto;
     color: #fff;
+    cursor: pointer;
 }
 
 h1 {
@@ -177,6 +178,7 @@ input, .second-demo-btn {
     margin: auto;
     padding: 1rem;
     width: 85%;
+    cursor: pointer;
 }
 
 input:focus {
@@ -210,7 +212,11 @@ footer ul li {
     margin-right: 12%;
 }
 
-footer ul li a, .fa {
+footer ul li:hover {
+    font-weight: 700;
+}
+
+footer ul li a {
     text-decoration: none;
     color: #fff;
 }
@@ -223,6 +229,7 @@ footer ul li a, .fa {
 
 #footer-logo {
     filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    cursor: auto;
 }
 
 .footer-circle {
@@ -537,9 +544,15 @@ footer ul li a, .fa {
     }
 
     .footer-icons {
-        margin-right: 9rem;
+        margin-right: 14rem;
         margin-top: 4rem;
         width: 8%;
     }
+
+    .social-icons {
+        cursor: pointer;
+        position: absolute;
+        z-index: 50;
+    } 
 }
 
