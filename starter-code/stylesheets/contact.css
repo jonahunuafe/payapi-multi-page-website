@@ -34,8 +34,19 @@ form > input {
     margin-top: 10%;
 }
 
-input[type="checkbox"] {
+.checkbox {
+    outline: 1px solid red;
+    position: relative;
     width: 100%;
+}
+
+input[type="checkbox"] {
+    /* width: 100%; */
+    accent-color: #9d3039;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
 }
 
 .check-para-div p:nth-of-type(2) {

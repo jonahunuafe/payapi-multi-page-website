@@ -107,6 +107,7 @@ nav ul li a {
     padding: 1rem;
     margin-right: 5%;
     color: #fff;
+    cursor: pointer;
 }
 
 .start-txt {
@@ -132,6 +133,7 @@ input[type=text], .second-demo-btn {
     border: none;
     display: block;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .second-demo-btn {
