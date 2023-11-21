@@ -461,12 +461,12 @@ footer ul li a {
     .team-members-circle {
         display: block;
         position: absolute;
-        transform: translate(-65%, -12.5%)
+        transform: translate(-65%, -21.5%);
+        z-index: -10;
     }
 
     .team-members-circle img {
         width: 110%;
-        z-index: -1;
     }
 
     #tablet-team-members {
