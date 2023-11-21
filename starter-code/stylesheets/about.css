@@ -461,8 +461,12 @@ footer ul li a {
     .team-members-circle {
         display: block;
         position: absolute;
-        transform: translate(-65%, -20.2%);
+        transform: translate(-65%, -9.29%);
         z-index: -10;
+    }
+
+    .team-members-circle img {
+        width: 100%;
     }
 
     #tablet-team-members {
