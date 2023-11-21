@@ -31,6 +31,7 @@ body, html {
     width: 30%;
     margin-top: 2.5rem;
     margin-left: 1.5rem;
+    cursor: auto;
 }
 
 #menu {
@@ -245,7 +246,6 @@ footer ul li a {
 
 
 
-
 /* For Tablet */
 @media(min-width: 768px) {
     #logo {
@@ -417,9 +417,6 @@ footer ul li a {
 
 
 
-
-
-
 /* For Desktop */
 @media(min-width: 800px) {
     #logo {
@@ -553,6 +550,14 @@ footer ul li a {
         cursor: pointer;
         position: absolute;
         z-index: 50;
-    } 
+    }
+    
+    .social-icons:hover { 
+        filter: invert(33%) 
+        sepia(100%) 
+        saturate(3230%) 
+        hue-rotate(331deg) 
+        brightness(101%) 
+        contrast(101%);
+    }
 }
-

@@ -63,6 +63,7 @@ form button {
     font-size: 1.1rem;
     border-width: 15%;
     margin-bottom: 15%;
+    cursor: pointer;
 }
 
 form button:hover {
@@ -85,7 +86,6 @@ h2 {
     max-width: 80%;
     margin-left: 10%;
 }
-
 
 
 /* For Tablets */
@@ -174,5 +174,9 @@ h2 {
 
     .submit {
         margin-left: -2%;
+    }
+
+    .icons-container {
+        transform: translateX(14%);
     }
 }

@@ -33,6 +33,7 @@ h2 {
     outline: none;
     margin-top: 10%;
     margin-bottom: 10%;
+    cursor: pointer;
 }
 
 .plan button:hover {
