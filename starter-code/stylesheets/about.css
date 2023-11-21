@@ -461,7 +461,7 @@ footer ul li a {
     .team-members-circle {
         display: block;
         position: absolute;
-        transform: translate(-65%, -23%);
+        transform: translate(-65%, -20.2%);
         z-index: -10;
     }
 
