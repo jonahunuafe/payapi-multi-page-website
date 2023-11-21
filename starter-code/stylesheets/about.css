@@ -465,10 +465,6 @@ footer ul li a {
         z-index: -10;
     }
 
-    .team-members-circle img {
-        width: 110%;
-    }
-
     #tablet-team-members {
         display: none;
     }
