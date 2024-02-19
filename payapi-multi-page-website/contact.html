@@ -3,37 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
+    <link rel="stylesheet" href="./starter-code/stylesheets/about.css">
+    <link rel="stylesheet" href="./starter-code/stylesheets/contact.css">
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
-
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+  <header>
+    <div class="circle-div">
+      <img src="./starter-code/assets/shared/desktop/bg-pattern-circle.svg" 
+      alt="background-circle" id="circle-img">
+    </div>
 
-    Submit a help request and we’ll get in touch shortly.
-    
-    Name
-    Email Address
-    Company Name
-    Title
-    Message
-    Stay up-to-date with company announcements and updates to our API
-    Submit
+    <div id="sub-header">
+      <a href="./index.html">
+        <img src="./starter-code/assets/shared/desktop/logo.svg" alt="logo" id="logo">
+      </a>
+      <img src="./starter-code/assets/shared/mobile/menu.svg" alt="menu-icon" id="menu">
+      <div id="nav-div">
+        <nav>
+          <ul>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="first-demo-btn">Schedule a Demo</button>
+        <img src="./starter-code/assets/shared/mobile/close.svg" alt="close-icon" id="close">
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1>Submit a help request and we’ll get in touch shortly.</h1>
+    <section class="form-section">
+      <div class="form-container">
+        <form class="form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required/>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required/>
+          <div class="error-msg">This field can't be empty</div>
+          <label for="company-name">Company Name</label>
+          <input type="text" id="company-name" name="company-name"/>
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title"/>
+          <label for="message">Message</label>
+          <input type="text" name="message" id="message" required/>
+          <div class="check-para-div">
+            <p class="checkbox-container">
+              <input type="checkbox" id="checkbox" name="checkbox"/>
+            </p>
+            <p>Stay up-to-date with company announcements and updates to our API</p>
+          </div>
+          <button class="submit">Submit</button>
+        </form>
+      </div>
 
-    Join the thousands of innovators already building with us
+      <div class="icons-container">
+        <h2>Join the thousands of innovators already building with us</h2>
+        <div class="icons-div">
+          <div>
+            <img src="./starter-code/assets/shared/desktop/tesla.svg" alt="tesla-icon" 
+            class="icon">
+          </div>
+          <div>
+            <img src="./starter-code/assets/shared/desktop/microsoft.svg" alt="microsoft-icon" 
+            class="icon">
+          </div>
+          <div>
+            <img src="./starter-code/assets/shared/desktop/hewlett-packard.svg" 
+            alt="hewlett-packard-icon" class="icon">
+          </div>
+          <div>
+            <img src="./starter-code/assets/shared/desktop/oracle.svg" alt="oracle-icon" 
+            class="icon">
+          </div>
+          <div>
+            <img src="./starter-code/assets/shared/desktop/google.svg" alt="google-icon" 
+            class="icon">
+          </div>
+          <div>
+            <img src="./starter-code/assets/shared/desktop/nvidia.svg" alt="nvidia-icon" 
+            class="icon">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+    <section class="fifth-section">
+      <div class="ready">
+        <h3>Ready to start?</h3>
+      </div>
+      <div class="input-demo-div">
+        <input type="text" placeholder="Enter email address">
+        <button class="second-demo-btn">Schedule a Demo</button>
+      </div>
+    </section>
+  </main>
+  <section class="footer-section">
+    <footer>
+      <div class="logo-ul">
+        <a href="./index.html">
+          <img src="./starter-code/assets/shared/desktop/logo.svg" alt="" id="footer-logo">
+        </a>
+        <ul>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-icons">
+        <a href="#"><img src="./starter-code/assets/shared/desktop/facebook.svg" alt="facebook-icon" 
+          class="social-icons">
+        </a>
+        <a href="#""><img src="./starter-code/assets/shared/desktop/twitter.svg" alt="twitter-icon" 
+          class="social-icons">
+        </a>
+        <a href="#"><img src="./starter-code/assets/shared/desktop/linkedin.svg" alt="linkedin-icon" 
+          class="social-icons">
+        </a>
+      </div>
+    </footer>
+    <div class="footer-circle">
+      <img src="./starter-code/assets/shared/desktop/bg-pattern-circle.svg" alt="background-circle">
+    </div>
+  </section>
+  <script src="./starter-code/javascripts/index.js"></script>
+  <script src="./starter-code/javascripts/contact.js"></script>
   </body>
-
 </html>

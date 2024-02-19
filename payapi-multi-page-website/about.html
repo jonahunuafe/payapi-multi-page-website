@@ -3,60 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
+    <link rel="stylesheet" href="./starter-code/stylesheets/about.css">
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
-
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+    <header>
+      <div class="circle-div">
+        <img src="./starter-code/assets/shared/desktop/bg-pattern-circle.svg" 
+        alt="background-image" id="circle-img">
+      </div>
 
-    We empower innovators by delivering access to the financial system
-
-    Our Vision
-
-    Our main goal is to build beautiful consumer experiences along with developer-friendly 
-    infrastructure. The result is an intelligent tool that gives everyone the ability to create 
-    amazing products that solve big problems. We are deeply focused on democratizing financial 
-    services through technology.
-
-    Our Business
-
-    At the core of our platform is the technical infrastructure APIs that connect consumers. 
-    Our innovative product provides key insights for businesses and individuals, as well as 
-    robust reporting for traditional financial institutions and developers.
-
-    Team Members 
-    300+
-
-    Offices in the US 
-    3
-
-    Transactions analyzed 
-    10M+
-
-    The Culture
-
-    We strongly believe there's always an opportunity to learn from each other outside of 
-    day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
-    We always value cross-team collaboration and diversity of thought, no matter the job title.
-
-    The People
+      <div id="sub-header">
+        <a href="./index.html">
+          <img src="./starter-code/assets/shared/desktop/logo.svg" alt="logo" id="logo">
+        </a>
+        <img src="./starter-code/assets/shared/mobile/menu.svg" alt="menu-icon" id="menu">
+        <div id="nav-div">
+          <nav>
+            <ul>
+              <li><a href="./pricing.html">Pricing</a></li>
+              <li><a href="./index.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="first-demo-btn">Schedule a Demo</button>
+          <img src="./starter-code/assets/shared/mobile/close.svg" alt="close-icon" id="close">
+        </div>
+      </div>
+    </header>
+  
     
-    We're all passionate about building a more efficient and inclusive financial infrastructure 
-    together. At PayAPI, we have diverse backgrounds and skills.
+    <main>
+      <h1>We empower innovators by delivering access to the financial system</h1>
+      <section class="first-section">
+        <div class="container">
+          <div class="col">
+            <h2>Our Vision</h2>
+          </div>
+          <div class="col">
+            <p>Our main goal is to build beautiful consumer experiences along with developer-friendly 
+            infrastructure. The result is an intelligent tool that gives everyone the ability to create 
+            amazing products that solve big problems. We are deeply focused on democratizing financial 
+            services through technology.
+            </p>
+          </div>
+        </div>
 
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
+        <div class="container">
+          <div class="col">
+            <h2>Our Business</h2>
+          </div>
+          <div class="col">
+            <p>
+              At the core of our platform is the technical infrastructure APIs that connect consumers. 
+              Our innovative product provides key insights for businesses and individuals, as well as 
+              robust reporting for traditional financial institutions and developers.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    Pricing
-    About
-    Contact
+      <section class="second-section">
+        <div class="team-members-circle">
+          <img src="./starter-code/assets/shared/desktop/bg-pattern-circle.svg" 
+          alt="background-image">
+        </div>
+
+        <div id="mobile-team-members">
+          <img src="./starter-code/assets/about/mobile/image-team-members.jpg" 
+          alt="mobile-team-members-icon">
+        </div>
+
+        <div id="tablet-team-members">
+          <img src="./starter-code/assets/about/tablet/image-team-members.jpg" 
+          alt="tablet-team-members-icon">
+        </div>
+
+        <div id="desktop-team-members">
+          <img src="./starter-code/assets/about/desktop/image-team-members.jpg" 
+          alt="desktop-team-members-icon">
+        </div>
+      </section>
+
+      <section class="third-section">
+        <div id="data-div">
+          <div class="data-col">
+            <p>Team Members</p>
+            <span>300+</span>
+          </div>
+          <div class="data-col">
+            <p>Offices in the US</p>
+            <span>3</span>
+          </div>
+          <div class="data-col">
+            <p>Transactions analyzed</p>
+            <span>10M+</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="fourth-section">
+        <div class="container">
+          <div class="col">
+            <h2>The Culture</h2>
+          </div>
+          <div class="col">
+            <p>
+              We strongly believe there's always an opportunity to learn from each other outside of 
+              day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker 
+              meetups. We always value cross-team collaboration and diversity of thought, no matter 
+              the job title.
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="col">
+            <h2>The People</h2>
+          </div>
+          <div class="col">
+            <p>
+              We're all passionate about building a more efficient and inclusive financial 
+              infrastructure together. At PayAPI, we have diverse backgrounds and skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="fifth-section">
+        <div class="ready">
+          <h3>Ready to start?</h3>
+        </div>
+        <div class="input-demo-div">
+          <input type="text" placeholder="Enter email address">
+          <button class="second-demo-btn">Schedule a Demo</button>
+        </div>
+      </section>
+    </main>
+    
+    <section class="footer-section">
+      <footer>
+        <div class="logo-ul">
+          <a href="./index.html">
+            <img src="./starter-code/assets/shared/desktop/logo.svg" 
+            alt="footer-logo" id="footer-logo">
+          </a>
+          <ul>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-icons">
+          <a href="#"><img src="./starter-code/assets/shared/desktop/facebook.svg" 
+            alt="facebook-icon" class="social-icons">
+          </a>
+          <a href="#""><img src="./starter-code/assets/shared/desktop/twitter.svg" 
+            alt="twitter-icon" class="social-icons">
+          </a>
+          <a href="#"><img src="./starter-code/assets/shared/desktop/linkedin.svg" 
+            alt="linkedin-icon" class="social-icons">
+          </a>
+        </div>
+      </footer>
+      <div class="footer-circle">
+        <img src="./starter-code/assets/shared/desktop/bg-pattern-circle.svg" 
+        alt="background-image">
+      </div>
+    </section>
+    <script src="./starter-code/javascripts/index.js"></script>
   </body>
-
 </html>

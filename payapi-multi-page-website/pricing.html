@@ -3,66 +3,173 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
+    <link rel="stylesheet" href="./starter-code/stylesheets/about.css">
+    <link rel="stylesheet" href="./starter-code/stylesheets/pricing.css">
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
-
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+    <header>
+      <div class="circle-div">
+        <img src="./starter-code/assets/shared/desktop/bg-pattern-circle.svg" 
+        alt="background-image" id="circle-img">
+      </div>
+  
+      <div id="sub-header">
+        <a href="./index.html">
+          <img src="./starter-code/assets/shared/desktop/logo.svg" alt="logo" id="logo">
+        </a>
+        <img src="./starter-code/assets/shared/mobile/menu.svg" alt="menu-icon" id="menu">
+        <div id="nav-div">
+          <nav>
+            <ul>
+              <li><a href="">Pricing</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="first-demo-btn">Schedule a Demo</button>
+          <img src="./starter-code/assets/shared/mobile/close.svg" alt="close-icon" id="close">
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Pricing</h1>
+      <section class="plan-container">
+        <div class="plan">
+          <h2>Free Plan</h2>
+          <p> Build and test using our core set of products with up to 100 API requests</p>
+          <span class="price">$0.00</span>
+          <div class="transaction">
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Transactions</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Auth</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Identity</span>
+            </div>
+            <div class="plan-col-1">Investments</div>
+            <div class="plan-col-1">Assets</div>
+            <div class="plan-col-1">Liabilities</div>
+            <div class="plan-col-1">Income</div>
+          </div>
+          <button>Request Access</button>
+        </div>
 
-    Pricing
+        <div class="plan">
+          <h2>Basic Plan</h2>
+          <p> Launch your project with unlimited requests and no contractual minimums</p>
+          <span class="price">$249.00</span>
+          <div class="transaction">
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Transactions</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Auth</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Identity</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Investments</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Assets</span>
+            </div>
+            <div class="plan-col-1">Liabilities</div>
+            <div class="plan-col-1">Income</div>
+          </div>
+          <button>Request Access</button>
+        </div>
 
-    Free Plan
-    Build and test using our core set of products with up to 100 API requests
-    $0.00
-    
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
+        <div class="plan">
+          <h2>Premium Plan</h2>
+          <p>Get tailored solutions, volume pricing, and dedicated support for your team</p>
+          <span class="price">$499.00</span>
+          <div class="transaction">
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Transactions</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Auth</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Identity</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Investments</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Assets</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Liabilities</span>
+            </div>
+            <div class="transaction-row">
+              <img src="./starter-code/assets/shared/desktop/icon-check.svg" alt="check-icon">
+              <span>Income</span>
+            </div>
+          </div>
+          <button>Request Access</button>
+        </div>
+      </section>
 
-    Basic Plan
-    Launch your project with unlimited requests and no contractual minimums
-    $249.00
-    
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
+      <section class="fifth-section">
+        <div class="ready">
+          <h3>Ready to start?</h3>
+        </div>
+        <div class="input-demo-div">
+          <input type="text" placeholder="Enter email address">
+          <button class="second-demo-btn">Schedule a Demo</button>
+        </div>
+      </section>
+    </main>
 
-    Premium Plan
-    Get tailored solutions, volume pricing, and dedicated support for your team
-    $499.00
-    
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+    <section class="footer-section">
+      <footer>
+        <div class="logo-ul">
+          <a href="./index.html">
+            <img src="./starter-code/assets/shared/desktop/logo.svg" 
+            alt="footer-logo" id="footer-logo">
+          </a>
+          <ul>
+            <li><a href="">Pricing</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-icons">
+          <a href="#"><img src="./starter-code/assets/shared/desktop/facebook.svg" 
+            alt="facebook-icon" class="social-icons">
+          </a>
+          <a href="#""><img src="./starter-code/assets/shared/desktop/twitter.svg" 
+            alt="twitter-icon" class="social-icons">
+          </a>
+          <a href="#"><img src="./starter-code/assets/shared/desktop/linkedin.svg" 
+            alt="linkedin-icon" class="social-icons">
+          </a>
+        </div>
+      </footer>
+      <div class="footer-circle">
+        <img src="./starter-code/assets/shared/desktop/bg-pattern-circle.svg" alt="background-image">
+      </div>
+    </section>
+    <script src="./starter-code/javascripts/index.js"></script>
   </body>
-
 </html>

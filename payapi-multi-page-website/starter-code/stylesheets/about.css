@@ -1,0 +1,563 @@
+*,
+*::before,
+*::after {    
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #E4F1FF;
+    font-size: 1.2rem;
+    color: #445069;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.circle-div {
+    position: relative;
+}
+
+.circle-div > img {
+    width: 120%;
+    position: absolute;
+    transform: translate(35%, -70%);
+    z-index: -1;
+}
+
+#logo {
+    width: 30%;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    cursor: auto;
+}
+
+#menu {
+    width: 7%;
+    position: relative;
+    float: right;
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+}
+
+#close {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+}
+
+nav::before {
+    content: "";
+    width: 80%;
+    border-top: 1px solid white;
+    position: absolute;
+    transform: translate(-50%, -7000%);
+}
+
+#nav-div {
+    width: 80%;
+    height: 100vh;
+    background: black;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 12rem;
+    margin-right: 2.5rem;
+}
+
+nav ul li {
+    list-style: none;
+    padding-top: 1.8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D8D9DA;
+    font-weight: 500;
+}
+
+.first-demo-btn {
+    width: 70%;
+    background: #AE445A;
+    border-radius: 1.5rem;
+    border-style: none;
+    padding: 1rem;
+    margin: auto;
+    color: #fff;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    position: relative;
+    top: 3.5rem;
+}
+
+.first-section {
+    margin-top: 18.6%;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+.team-members-circle {
+    display: none;
+}
+
+#mobile-team-members {
+    margin-top: 20%;
+}
+
+#mobile-team-members > img {
+    width: 100%;
+}
+
+#tablet-team-members {
+    display: none;
+}
+
+#desktop-team-members {
+    display: none;
+}
+
+.third-section {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+#data-div {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    padding-bottom: 10%;
+}
+
+.data-col p {
+    font-size: 1.3rem;
+}
+
+.data-col span {
+    color: #AE445A;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.fifth-section {
+    text-align: center;
+    margin-top: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+input, .second-demo-btn {
+    display: block;
+    border-radius: 2.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin: auto;
+    padding: 1rem;
+    width: 85%;
+    cursor: pointer;
+}
+
+input:focus {
+    font-weight: bold;
+}
+
+.input-demo-div {
+    margin-top: -1%;
+    margin-bottom: 25%;
+}
+
+.second-demo-btn {
+    background-color: #AE445A;
+    color: #fff;
+    margin-top: 3.5%;
+}
+
+.footer-section {
+    overflow: hidden;
+}
+
+footer {
+    background: #252B48;
+    text-align: center;
+    padding: 15%;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 3;
+    margin-right: 12%;
+}
+
+footer ul li:hover {
+    font-weight: 700;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+#footer-logo {
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    cursor: auto;
+}
+
+.footer-circle {
+    position: relative;
+}
+
+.footer-circle img {
+    position: absolute;
+    width: 150%;
+    z-index: 1;
+    transform: translate(-15.5%, -31%);
+}
+
+
+
+/* For Tablet */
+@media(min-width: 768px) {
+    #logo {
+        width: 20%;
+        margin-left: 2.5rem;
+    }
+
+    .circle-div > img {
+        width: 120%;
+        transform: translate(52%, -70%);
+    }
+
+    .first-demo-btn {
+        margin-right: 2.5rem;
+    }
+
+    #nav-div {
+        display: block;
+        background: transparent;
+        height: 0;
+    }
+
+    nav::before {
+        display: none;
+    }
+
+    #menu, #close {
+        display: none;
+    }
+
+    nav ul {
+        margin-top: 3.2%;
+        flex-direction: row;
+        margin-left: 2.5rem;
+    }
+
+    nav ul li a {
+        color: black;
+        margin-right: 2.5rem;
+    }
+
+    nav ul li a:hover {
+        font-weight: bold;
+    }
+
+    .first-demo-btn {
+        width: 25%;
+        position: relative;
+        float: right;
+        margin-top: -10%;
+    }
+
+    h1 {
+        width: 80%;
+        font-size: 3rem;
+    }
+
+    .first-section {
+        margin-top: 10%;
+    }
+
+    .container {
+        width: 85%;
+        padding-top: 1.5rem;
+        display: flex;
+        text-align: left;
+    }
+
+    .col {
+        flex-basis: 50%;
+    }
+
+    #mobile-team-members {
+        display: none;
+    }
+
+    #tablet-team-members {
+        display: block;
+        margin-top: 10%;
+    }
+
+    #desktop-team-members {
+        display: none;
+    }
+
+    .third-section {
+        width: 90%;
+        text-align: left;
+    }
+
+    #data-div {
+        border-top: none;
+        border-bottom: none;
+        margin-top: 10%;
+        display: flex;
+        margin-left: 1.5%;
+        margin-bottom: -5%;
+    }
+
+    .data-col {
+        flex-basis: 33%;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        margin-right: 2%;
+    }
+
+    h3 {
+        font-size: 3rem;
+        margin-bottom: 20%;
+    }
+
+    .input-demo-div {
+        display: flex;
+        width: 70%;
+        margin: auto;
+        position: relative;
+        top: -6.3rem;
+        left: 1.5rem;
+    }
+
+    input {
+        width: 65%;
+        padding: 1.1rem;
+    } 
+
+    .second-demo-btn {
+        width: 35%;
+        padding: 1.1rem;
+        margin-top: 0.1%;
+        position: relative;
+        right: 3rem;
+    }
+
+    .footer-section {
+        margin-top: 2%;
+    }
+
+    footer {
+        padding: 0;
+        height: 100px;
+    }
+
+    .footer-circle img {
+       width: 50%;
+       transform: translate(120%, -30%);
+    }
+
+    footer, .logo-ul, footer ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-ul {
+        margin-left: 5%;
+    }
+
+    #footer-logo {
+        margin-top: 22%;
+    }
+
+    .footer-icons {
+        margin-right: 2.5rem;
+        margin-top: 2.4rem; 
+        display: flex;
+        justify-content: space-between;
+        width: 15%;
+    }
+}
+
+
+
+/* For Desktop */
+@media(min-width: 800px) {
+    #logo {
+        width: 10%;
+        margin-left: 10%;
+    }
+
+    .circle-div > img {
+        width: 50%;
+        transform: translate(120%, -75%);
+    }
+
+    .first-demo-btn {
+        width: 15%;
+        margin-top: -5%;
+        margin-right: 12%;
+    }
+
+    nav ul {
+        margin-top: 2%;
+        margin-left: 5.8rem;
+    }
+
+    nav ul li a {
+        margin-right: 8rem;
+    }
+
+    h1 {
+        width: 45%;
+        margin-left: 16%;
+        text-align: left;
+    }
+
+    .container {
+        width: 67%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .team-members-circle {
+        display: block;
+        position: absolute;
+        z-index: -10;
+    }
+
+    .team-members-circle img {
+        width: 110%;
+        transform: translate(-65%, -21.9%); 
+    }
+
+    #tablet-team-members {
+        display: none;
+    }
+
+    #desktop-team-members {
+        display: block;
+        margin-top: 5%;
+    }
+
+    #desktop-team-members img {
+        width: 100%;
+    }
+
+    .third-section {
+        width: 85%;
+    }
+
+    #data-div {
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    .fifth-section {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        left: 0;
+    }
+
+    .input-demo-div {
+        position: relative;
+        top: 0;
+        left: 15rem;
+    }
+
+    input {
+        position: relative;
+        right: 3rem;
+        width: 80%;
+    }
+
+    .second-demo-btn {
+        position: relative;
+        width: 35%;
+        right: 9.95rem;
+
+    }
+
+    h3 {
+        font-size: 2.7rem;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .logo-ul {
+        margin-left: 8.25%;
+        margin-top: 1.5rem;
+        width: 22%;
+    }
+
+    footer ul li {
+        padding-left: 3rem;
+    }
+
+    #footer-logo {
+        margin-top: 22%;
+    }
+
+    .footer-icons {
+        margin-right: 14rem;
+        margin-top: 4rem;
+        width: 8%;
+    }
+
+    .social-icons {
+        cursor: pointer;
+        position: absolute;
+        z-index: 50;
+    }
+    
+    .social-icons:hover { 
+        filter: invert(33%) 
+        sepia(100%) 
+        saturate(3230%) 
+        hue-rotate(331deg) 
+        brightness(101%) 
+        contrast(101%);
+    }
+}

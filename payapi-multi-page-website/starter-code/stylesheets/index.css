@@ -76,6 +76,10 @@ nav::before {
     display: none;
 }
 
+.hide-nav {
+    transform: translateX(100%);
+}
+
 nav ul {
     display: flex;
     flex-direction: column;
@@ -103,6 +107,7 @@ nav ul li a {
     padding: 1rem;
     margin-right: 5%;
     color: #fff;
+    cursor: pointer;
 }
 
 .start-txt {
@@ -126,9 +131,9 @@ input[type=text], .second-demo-btn {
     border-radius: 2.5rem;
     outline: none;
     border: none;
-    font-size: 0.8rem;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .second-demo-btn {
@@ -190,23 +195,27 @@ h2 {
 
 .we-work-div > p {
     color: #D0D4CA;
+    line-height: 1.5;
 }
 
-.we-work-div button {
-    background: transparent;
+.about-btn-div {
+    margin-top: 15.5%;
+    padding-bottom: 25%;
+    text-align: center;
+}
+
+.about-btn-div a {
     padding: 1rem;
     border-radius: 2.5rem;
-    outline: none;
     border: 1px solid #fff;
-    font-size: 0.8rem;
-    width: 40%;
-    margin-top: 10%;
-    margin-bottom: 20%;
-}
-
-.we-work-div button a {
+    font-size: 1rem;
+    width: 50%;
+    display: block;
+    cursor: pointer;
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
+    margin: auto;
 }
 
 .html-icon-div > img {
@@ -313,7 +322,11 @@ footer ul li {
     margin-right: 12%;
 }
 
-footer ul li a, .fa {
+footer ul li:hover {
+    font-weight: 700;
+}
+
+footer ul li a {
     text-decoration: none;
     color: #fff;
 }
@@ -326,6 +339,7 @@ footer ul li a, .fa {
 
 #footer-logo {
     filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    cursor: auto;
 }
 
 .footer-circle {
@@ -341,18 +355,17 @@ footer ul li a, .fa {
 
 
 
-
-
 /* For Tablets */
-
 @media(min-width: 768px) {
+    
     #nav-div {
         left: 5rem;
+        display: none;
+        transform: translateX(0);
     }
 
     nav::before {
         width: 90%; 
-
     }
 
     #question {
@@ -393,6 +406,7 @@ footer ul li a, .fa {
 
     .dark-blue-div {
         overflow: hidden;
+        margin-bottom: 10%;
     }
 
     .dark-blue-circle {
@@ -403,7 +417,6 @@ footer ul li a, .fa {
     .dark-blue-circle img {
         position: absolute;
         top: -35rem;
-        z-index: 1; 
     }
 
     .icons-div {
@@ -419,6 +432,16 @@ footer ul li a, .fa {
     .we-work-div {
         width: 65%;
         margin-top: 15%;
+    }
+
+    .about-btn-div {
+        margin-top: 10%;
+        padding-bottom: 12%;
+    }
+
+    .about-btn-div a {
+        padding: 1.5rem;
+        font-size: 1.5rem;
     }
 
     h2 {
@@ -488,7 +511,6 @@ footer ul li a, .fa {
        transform: translate(120%, -30%);
     }
     
-
     footer, .logo-ul, footer ul {
         display: flex;
         justify-content: space-between;
@@ -504,27 +526,17 @@ footer ul li a, .fa {
 
     .footer-icons {
         margin-right: 4rem;
-        margin-top: 2.6rem; 
-    }
-
-    .fa {
-        padding-right: 25%;
+        margin-top: 2.6rem;
+        gap: 30%; 
     }
 }
 
 
 
-
-
-
-
-
-
 /* For Desktop */
-
 @media(min-width: 800px) {
     #logo {
-        width: 10%;
+        width: 12%;
         margin-left: 10%;
     }
 
@@ -549,7 +561,6 @@ footer ul li a, .fa {
     
     #nav-div {
         background: none;
-        height: 0;
         display: block;
     }
 
@@ -558,7 +569,7 @@ footer ul li a, .fa {
     }
 
     nav ul {
-        margin-top: 0;
+        margin-top: 2.8%;
         margin-left: 22%;
         flex-direction: row;
         justify-content: space-between;
@@ -567,6 +578,7 @@ footer ul li a, .fa {
 
     nav ul li a {
         color: #252B48;
+        font-size: 1.5rem;
     }
 
     nav ul li a:hover {
@@ -574,7 +586,7 @@ footer ul li a, .fa {
     }
 
     .first-demo-btn {
-        width: 10%;
+        width: 12%;
         margin-right: 0;
         position: relative;
         float: right;
@@ -613,9 +625,9 @@ footer ul li a, .fa {
     }
 
     .second-demo-btn {
-        width: 30%;
+        width: 35%;
         right: 3rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     #question {
@@ -626,6 +638,7 @@ footer ul li a, .fa {
 
     .dark-blue-div {
         margin-top: 0;
+        height: 480px;
     }
 
     .dark-blue-sub-div {
@@ -648,7 +661,7 @@ footer ul li a, .fa {
     .icons-div {
         max-width: 30%;
         margin: auto;
-        top: 0;
+        top: 1rem;
         left: 0;
         gap: 10%;
         height: 100px;
@@ -658,21 +671,24 @@ footer ul li a, .fa {
         width: 85%;
     }
 
-    .we-work-div button {
-        width: 25%;
-        margin-top: 2%;
-        margin-bottom: 0;
-        font-weight: 700;
+    .about-btn-div {
+        margin-top: 5%;
     }
 
-    .we-work-div button:hover {
+    .about-btn-div a {
+        width: 13%;
+        padding: 1rem;
+        position: absolute;
+    }
+
+    .about-btn-div a:hover {
         background: #fff;
         color: #252B48;
     }
 
     .dark-blue-circle img {
-        top: -26rem;
-        left: -12rem;
+        top: -22rem;
+        left: -11rem;
     }
 
     .third-section {
@@ -765,6 +781,7 @@ footer ul li a, .fa {
 
     footer {
         height: 150px;
+        position: relative;
     }
 
     .logo-ul {
@@ -784,10 +801,22 @@ footer ul li a, .fa {
     .footer-icons {
         margin-right: 9rem;
         margin-top: 4rem;
-        width: 7%;
+        width: 8%;
+        justify-content: space-between;
     }
 
-    .fa:hover {
-        color: red;
+    .social-icons {
+        cursor: pointer;
+        position: absolute;
+        z-index: 50;
+    }
+
+    .social-icons:hover { 
+        filter: invert(33%) 
+        sepia(100%) 
+        saturate(3230%) 
+        hue-rotate(331deg) 
+        brightness(101%) 
+        contrast(101%);
     }
 }

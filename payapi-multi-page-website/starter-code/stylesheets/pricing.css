@@ -1,0 +1,152 @@
+.plan-container {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.plan {
+    width: 90%;
+    margin: auto;
+}
+
+h2 {
+    color: #AE445A;
+}
+
+.price {
+    font-size: 3.4rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 9%;
+}
+
+.plan > p {
+    line-height: 1.5;
+}
+
+.plan button {
+    border-radius: 2.5rem;
+    padding: 0.7rem;
+    border: 1px solid black;
+    background: transparent;
+    font-weight: 600;
+    font-size: 1.2rem;
+    outline: none;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    background-color: #192655;
+    color: #fff;
+}
+
+.transaction {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10%;
+}
+
+.transaction-row {
+    font-weight: bold;
+}
+
+.transaction-row img {
+    margin-left: 22%;
+}
+
+.transaction-row span {
+    margin-left: 10%; 
+}
+
+.plan-col-1 {
+    padding-left: 39%;
+    color: #7D7C7C;
+}
+
+
+
+
+/* For Tablets */
+@media(min-width: 768px) {
+    h1 {
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+
+    .plan-container {
+        display: flex;
+        width: 95%;
+        margin: auto;
+
+    }
+    
+    .plan {
+        flex-basis: 35%;
+    }
+
+    .transaction {
+        margin-right: 5%;
+        position: relative;
+        left: 0.2rem;
+    }
+
+    .price {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .transaction-row img {
+        margin-left: 12%;
+    }
+    
+    .transaction-row span {
+        margin-left: 12%; 
+    }
+    
+    .plan-col-1 {
+        padding-left: 35%;
+    }
+}
+
+
+
+/* For Desktop */
+@media(min-width: 800px) {
+    h1 {
+        margin-left: 10.5%;
+    }
+
+    .plan-container {
+        width: 80%;
+        text-align: left;
+        position: relative;
+        bottom: 5rem;
+        right: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .plan {
+        flex-basis: 30%;
+    }
+
+    .price {
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    .transaction-row img {
+        margin-left: -12%;
+    }
+    
+    .plan-col-1 {
+        padding-left: 6%;
+    }
+}
