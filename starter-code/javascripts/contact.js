@@ -3,7 +3,7 @@ const email = document.querySelector("#email");
 
 
 function preventSubmit(event) {
-    event.preventDefault();
+  event.preventDefault();
 }
 
 function validateEmail() {
