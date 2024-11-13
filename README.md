@@ -47,5 +47,5 @@ Users should be able to:
 ## Author
 
 - Website - [Github](https://jonahunuafe.github.io/payapi-multi-page-website/)
-- Frontend Mentor - []()
+- Frontend Mentor - [@jonahunuafe](https://www.frontendmentor.io/profile/jonahunuafe)
 - Twitter - [@jonahunuafe](https://www.twitter.com/jonahunuafe)
