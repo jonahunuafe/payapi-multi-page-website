@@ -46,6 +46,6 @@ Users should be able to:
 
 ## Author
 
-- Website - []()
+- Website - [Github](https://jonahunuafe.github.io/payapi-multi-page-website/)
 - Frontend Mentor - []()
-- Twitter - []()
+- Twitter - [@jonahunuafe](https://www.twitter.com/jonahunuafe)
